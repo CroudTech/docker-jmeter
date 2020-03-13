@@ -1,18 +1,18 @@
-[![Docker Build](https://img.shields.io/docker/automated/justb4/jmeter.svg)](https://hub.docker.com/r/justb4/jmeter)
+[![Docker Build](https://img.shields.io/docker/automated/croudtech/jmeter.svg)](https://hub.docker.com/r/croudtech/jmeter)
 
 # docker-jmeter
 ## Image on Docker Hub
 
 Docker image for [Apache JMeter](http://jmeter.apache.org).
 This Docker image can be run as the ``jmeter`` command. 
-Find Images of this repo on [Docker Hub](https://hub.docker.com/r/justb4/jmeter).
+Find Images of this repo on [Docker Hub](https://hub.docker.com/r/croudtech/jmeter).
 
 ## Building
 
 With the script [build.sh](build.sh) the Docker image can be build
 from the [Dockerfile](Dockerfile) but this is not really necessary as
 you may use your own ``docker build`` commandline. Or better: use one
-of the pre-built Images from [Docker Hub](https://hub.docker.com/r/justb4/jmeter).
+of the pre-built Images from [Docker Hub](https://hub.docker.com/r/croudtech/jmeter).
 
 See end of this doc for more detailed build/run/test instructions (thanks to @wilsonmar!)
 
@@ -20,7 +20,7 @@ See end of this doc for more detailed build/run/test instructions (thanks to @wi
 
 Build argumments (see [build.sh](build.sh)) with default values if not passed to build:
 
-- **JMETER_VERSION** - JMeter version, default ``5.1.1``
+- **JMETER_VERSION** - JMeter version, default ``5.2.1``
 - **IMAGE_TIMEZONE** - timezone of Docker image, default ``"Europe/Amsterdam"``
 
 NB **IMAGE_TIMEZONE** setting is not working yet.
@@ -69,7 +69,7 @@ Contribution by @wilsonmar
 
    The last line in the response should be:
    
-   <tt>Successfully tagged justb4/jmeter:5.1.1</tt>
+   <tt>Successfully tagged croudtech/jmeter:5.2.1</tt>
 
 1. Run the test script:
 
